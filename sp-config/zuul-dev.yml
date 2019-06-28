@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: zuul
+    
+server:
+  port: 3001
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+
+#此项映射关系不用配置也可以，会自动从注册中心读取数据来转发
+#zuul:
+  #routes:
+    #item-service: /item-service/**
+    #user-service: /user-service/**
+    #order-service: /order-service/**
+zuul:
+  retryable: true
+  
+#默认的配置 
+#ribbon:
+  #ConnectTimeout: 1000
+  #ReadTimeout: 1000
+  #MaxAutoRetriesNextServer: 1
+  #MaxAutoRetries: 1
+
+#暴露 hystrix.stream 监控端点 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream 
+  
+  
+  
+  
+  
+  
+  
+  
+  
