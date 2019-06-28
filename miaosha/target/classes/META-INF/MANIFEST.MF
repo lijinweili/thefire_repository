@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: miaosha
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: com.company
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/miaosha
+Created-By: Maven Integration for Eclipse
+
